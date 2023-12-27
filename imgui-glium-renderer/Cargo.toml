@@ -10,11 +10,11 @@ license = "MIT OR Apache-2.0"
 categories = ["gui", "rendering"]
 
 [dependencies]
-glium = { version = "0.33.0", default-features = false }
+glium = { git = "https://github.com/Syndelis/glium", rev = "968fc92378caf4b8306785dd005b51cd1a7cf97f", default-features = false }
 imgui = { version = "0.11.0", path = "../imgui" }
 
 [dev-dependencies]
-glium = { version = "0.33.0", default-features = false, features = ["glutin_backend"] }
+glium = { git = "https://github.com/Syndelis/glium", rev = "968fc92378caf4b8306785dd005b51cd1a7cf97f", default-features = false, features = ["glutin_backend"] }
 imgui-winit-support = {path = "../imgui-winit-support"}
 glutin = "0.31.1"
 glutin-winit = "0.4.2"
