@@ -481,7 +481,7 @@ impl WinitPlatform {
                 // applications to use either general "ctrl" or a
                 // specific key. Same applies to other modifiers.
                 // https://github.com/ocornut/imgui/issues/5047
-                handle_key_modifier(io, key, pressed);
+                handle_key_modifier(io, &key, pressed);
 
                 // Add main key event
                 if let Some(key) = to_imgui_key(key) {
